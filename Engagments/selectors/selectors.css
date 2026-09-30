@@ -1,0 +1,19 @@
+p{ 
+        color: green;
+    }
+
+header{
+        color: blue;
+    }
+    main p{
+        color: red;
+    }
+    #maintitle{
+        color: purple;
+    }
+    h4{
+        color: orange;
+    }
+    h1{
+        color: brown;
+    }
