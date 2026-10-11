@@ -1,0 +1,130 @@
+* General styles for every page */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #173D32;
+    background-color: #F5F1E6;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #176B55;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3em;
+}
+
+nav {
+    background-color: #124C40;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 8px;
+    padding: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #D8A64A;
+    color: #173D32;
+}
+
+nav a.active {
+    background-color: #D8A64A;
+    color: #173D32;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #176B55;
+}
+
+ul {
+    list-style-image: url("images/bullet.png");
+    padding-left: 30px;
+}
+
+li {
+    padding: 5px;
+}
+
+main a {
+    color: #176B55;
+}
+
+main a:hover {
+    color: #B36B20;
+}
+
+footer {
+    background-color: #124C40;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* Home page backgrounds */
+body.home {
+    background-color: #F5F1E6;
+    background-image: url("images/texture.jpg");
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+body.home main {
+    background-image: url("images/decoration.png");
+    background-repeat: no-repeat;
+    background-position: right 20px top 20px;
+    background-size: 100px auto;
+    padding-right: 135px;
+}
+
+/* Tour photos */
+.tour-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-gallery figure {
+    flex: 1 1 280px;
+    margin: 0;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    padding: 5px 0;
+}
