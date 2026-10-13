@@ -1,0 +1,22 @@
+body { font-family: Arial, Helvetica, sans-serif; 
+}
+
+* { outline: thin solid red; 
+}
+
+.p1{
+    width: 100px;
+    overflow: hidden;
+    
+}
+
+
+.p2{
+   margin: 0;
+}
+
+
+.p3{
+    padding: 100px;
+border: 5px solid black;
+}
