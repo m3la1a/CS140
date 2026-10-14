@@ -1,0 +1,39 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    
+    color: rgb(145, 25, 25);
+
+}
+
+.templefig {
+    border: 2px solid black;
+    width: 250px;
+    overflow: scroll;
+  
+}
+.templefig img {
+    width: 100%;
+   
+}
+.enforcer {
+    clear: both;
+}
+   
+#floatfig {
+    float: center;
+
+}
+#relative {
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+#absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
