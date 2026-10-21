@@ -1,0 +1,14 @@
+body { font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+    border: 2px solid black;
+
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*flex-flow: row; comment - ignored*/
+    gap: 10px;
+}

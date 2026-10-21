@@ -20,7 +20,19 @@
 # else:
     # print("what da frick u mean")
 
-n = 21
-    if n > 20:
-        print(n)
-         print("Done") 
+# n = 21
+#     if n > 20:
+#         print(n)
+#          print("Done") 
+
+temperatures = open('d:\\temps.txt', 'r', encoding='utf-8')
+values = [float(line.strip()) for line in temperatures if line.strip()]
+avgtmp = sum(values) / len(values)
+temperatures.close()
+print(f'{avgtmp:.1f}')
+
+
+
+
+
+        
