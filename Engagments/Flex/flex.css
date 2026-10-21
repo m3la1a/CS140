@@ -2,13 +2,27 @@ body { font-family: Arial, Helvetica, sans-serif;
 }
 .card {
     border: 2px solid black;
+    padding:5px;
+    width: 150px;
 
 }
 
 .parent {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     /*flex-flow: row; comment - ignored*/
     gap: 10px;
+}
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content:space-evenly;
+}
+nav a {
+    display:block;
+    padding: 5px 10px;
+    background-color: #1f5daf;
+    color: white;
+    
 }
