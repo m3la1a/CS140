@@ -1,0 +1,44 @@
+body { font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: 2px solid black;
+    padding:5px;
+    width: 150px;
+
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content:space-evenly;
+}
+nav a {
+    display:flex;
+    padding: 5px 10px;
+    background-color: #1f5daf;
+    color: white;
+    
+}
+div img {
+   
+    width: 150px;
+    background-color: white;
+}
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+aside {
+    align-self: left;
+}
+
+
