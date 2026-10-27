@@ -1,0 +1,61 @@
+body{ font-family: Arial, Helvetica, sans-serif; 
+ }
+ nav {
+    display: flex;
+    background-color: rgb(1, 1, 4);
+    justify-content: space-around;
+    
+}
+nav a {
+    display: block;
+    padding: 5px 20px;
+    background-color: rgba(158, 186, 235, 0.969);
+    color: black;
+}
+header h1 {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(220, 245, 240);
+}
+.mainrow {
+    display: grid;
+grid-template-columns: 1fr 4fr;
+}
+main {
+    background-color: 
+    ;
+}
+.sidebar {
+    width: 25%;
+}
+main {
+    width: 75%;
+}
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+}
+.card h2 {
+    margin: 0;
+}
+.card a {
+    display: block;
+    padding: 10px;
+    background-color: aqua;
+    width: 60%;
+    margin-bottom: 0 auto 5px auto ;
+    border-radius: 5px;
+    color: aquamarine;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
