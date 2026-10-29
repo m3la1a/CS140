@@ -24,8 +24,7 @@ header {
 grid-template-columns: 1fr 4fr;
 }
 main {
-    background-color: 
-    ;
+    background-color:pink;
 }
 .sidebar {
     width: 25%;
