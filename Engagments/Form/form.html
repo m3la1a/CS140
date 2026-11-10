@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Project</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>My HTML Forms Project</h1>
+        <p>Learning how to use different HTML form controls.</p>
+    </header>
+
+    <main>
+
+        <h2>Basic Login Form</h2>
+
+        <form action="#" method="post">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <button type="submit">Login</button>
+
+            <h3>Basic Form Questions and Answers</h3>
+
+            <p><strong>1. Click each label. What happens?</strong></p>
+            <p>Answer: When I click a label, the cursor moves to the matching input field.</p>
+
+            <p><strong>2. Type in the password field. What do you notice?</strong></p>
+            <p>Answer: The password characters are hidden and appear as dots or circles.</p>
+
+            <p><strong>3. Click the submit button. What changed in the address bar?</strong></p>
+            <p>Answer: The form is submitted, and the browser follows the action and method. With this example, the page may reload, but no information is sent to a real server.</p>
+
+        </form>
+
+        <hr>
+
+        <h2>Standard Form Controls</h2>
+
+        <form>
+
+            <label for="major">Choose your major:</label>
+            <select id="major" name="major">
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Business</option>
+                <option value="education">Education</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br><br>
+
+            <p>What is your favorite subject?</p>
+
+            <input type="radio" id="math" name="subject" value="math">
+            <label for="math">Math</label>
+
+            <input type="radio" id="english" name="subject" value="english">
+            <label for="english">English</label>
+
+            <input type="radio" id="computer" name="subject" value="computer">
+            <label for="computer">Computer Science</label>
+
+            <br><br>
+
+            <p>What are your hobbies?</p>
+
+            <input type="checkbox" id="basketball" name="hobbies" value="basketball">
+            <label for="basketball">Basketball</label>
+
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <label for="cooking">Cooking</label>
+
+            <br><br>
+
+            <label for="comments">Tell us about yourself:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="35" placeholder="Write your answer here..."></textarea>
+
+        </form>
+
+        <hr>
+
+        <h2>HTML5 Form Controls</h2>
+
+        <form>
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday">
+
+            <br><br>
+
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+
+            <br><br>
+
+            <label for="website">Your Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+
+            <br><br>
+
+            <h3>HTML5 Questions and Answers</h3>
+
+            <p><strong>1. What does the browser give you that a plain text box does not?</strong></p>
+            <p>Answer: HTML5 controls provide special features like a calendar for dates, number arrows, and automatic input checking.</p>
+
+            <p><strong>2. Does the keyboard change on your phone?</strong></p>
+            <p>Answer: Yes. The keyboard can change depending on the input type. For example, number fields can show a number keyboard.</p>
+
+        </form>
+
+        <hr>
+
+        <h2>Questions and Answers</h2>
+
+        <p><strong>1. The form tag has an "action" attribute. What does it do?</strong></p>
+        <p>Answer: The action attribute tells the browser where to send the form information after the user clicks submit.</p>
+
+        <p><strong>2. The form tag has a "method" attribute. What does it do?</strong></p>
+        <p>Answer: The method attribute tells the browser how to send the form information to the server.</p>
+
+        <p><strong>3. What is the difference between POST and GET?</strong></p>
+        <p>Answer: GET sends information through the URL, while POST sends information in the request body. POST is better for sensitive or larger information, but it still needs HTTPS for security.</p>
+
+        <p><strong>4. How do you fill in a form control with a pre-set value, and how is that different from a placeholder?</strong></p>
+
+        <ul>
+            <li><strong>Text box:</strong> Use value="Mela" to put in a pre-set value. A placeholder="Enter name" shows a hint that disappears when typing.</li>
+
+            <li><strong>Textarea:</strong> Put the pre-set text between the opening and closing textarea tags. A placeholder shows a hint instead.</li>
+
+            <li><strong>Select box:</strong> Add the selected attribute to the option you want selected by default.</li>
+
+            <li><strong>Checkbox:</strong> Use the checked attribute to make it selected by default.</li>
+
+            <li><strong>Radio button:</strong> Use the checked attribute to select one option by default.</li>
+        </ul>
+
+        <p><strong>5. List all the form controls that HTML5 added. Which ones did you put in your form?</strong></p>
+
+        <p>Answer: HTML5 added these input types:</p>
+
+        <ul>
+            <li>email</li>
+            <li>url</li>
+            <li>number</li>
+            <li>range</li>
+            <li>date</li>
+            <li>time</li>
+            <li>datetime-local</li>
+            <li>month</li>
+            <li>week</li>
+            <li>color</li>
+            <li>search</li>
+            <li>tel</li>
+        </ul>
+
+        <p>I used email, date, number, and url in my form.</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Melaia Maiwiriwiri</p>
+    </footer>
+
+</body>
+</html>
