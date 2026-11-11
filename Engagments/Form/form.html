@@ -17,37 +17,39 @@
 
         <h2>Basic Login Form</h2>
 
-        <form action="#" method="post">
+        <form action="formprocessing.html" method="post">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+        <fieldset>
+            <legend>Login Information</legend>
+            <div class="form-row">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-row">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+           <br>
 
-            <label for="password">Password:</label>
+            <label for="password">Password.:</label>
             <input type="password" id="password" name="password" required>
+           
             <br><br>
 
             <button type="submit">Login</button>
+           </div> 
 
-            <h3>Basic Form Questions and Answers</h3>
-
-            <p><strong>1. Click each label. What happens?</strong></p>
-            <p>Answer: When I click a label, the cursor moves to the matching input field.</p>
-
-            <p><strong>2. Type in the password field. What do you notice?</strong></p>
-            <p>Answer: The password characters are hidden and appear as dots or circles.</p>
-
-            <p><strong>3. Click the submit button. What changed in the address bar?</strong></p>
-            <p>Answer: The form is submitted, and the browser follows the action and method. With this example, the page may reload, but no information is sent to a real server.</p>
-
+           
         </form>
 
+        
         <hr>
-
         <h2>Standard Form Controls</h2>
-
+        <hr>
         <form>
-
+        
             <label for="major">Choose your major:</label>
             <select id="major" name="major">
                 <option value="computer-science">Computer Science</option>
@@ -59,7 +61,6 @@
             <br><br>
 
             <p>What is your favorite subject?</p>
-
             <input type="radio" id="math" name="subject" value="math">
             <label for="math">Math</label>
 
@@ -68,19 +69,25 @@
 
             <input type="radio" id="computer" name="subject" value="computer">
             <label for="computer">Computer Science</label>
-
+   
             <br><br>
 
             <p>What are your hobbies?</p>
 
-            <input type="checkbox" id="basketball" name="hobbies" value="basketball">
-            <label for="basketball">Basketball</label>
+            <div class="checkbox-row">
+                <input type="checkbox" id="basketball" name="hobbies" value="basketball">
+                <label for="basketball">Basketball</label>
+            </div>
 
-            <input type="checkbox" id="music" name="hobbies" value="music">
-            <label for="music">Music</label>
+            <div class="checkbox-row">
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+            </div>
 
-            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
-            <label for="cooking">Cooking</label>
+            <div class="checkbox-row">
+                <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                <label for="cooking">Cooking</label>
+            </div>
 
             <br><br>
 
@@ -90,10 +97,14 @@
 
         </form>
 
-        <hr>
-
+        <br>
+        <hr>       
+        
+        
         <h2>HTML5 Form Controls</h2>
-
+        
+        
+        <hr>
         <form>
 
             <label for="birthday">Date of Birth:</label>
@@ -108,7 +119,8 @@
 
             <label for="website">Your Website:</label>
             <input type="url" id="website" name="website" placeholder="https://example.com">
-
+        
+        </fieldset>
             <br><br>
 
             <h3>HTML5 Questions and Answers</h3>
@@ -122,6 +134,18 @@
         </form>
 
         <hr>
+        <br><br>
+ 
+        <h3>Basic Form Questions and Answers</h3>
+
+            <p><strong>1. Click each label. What happens?</strong></p>
+            <p>Answer: When I click a label, the cursor moves to the matching input field.</p>
+
+            <p><strong>2. Type in the password field. What do you notice?</strong></p>
+            <p>Answer: The password characters are hidden and appear as dots or circles.</p>
+
+            <p><strong>3. Click the submit button. What changed in the address bar?</strong></p>
+            <p>Answer: The form is submitted, and the browser follows the action and method. With this example, the page may reload, but no information is sent to a real server.</p>
 
         <h2>Questions and Answers</h2>
 
@@ -168,6 +192,15 @@
         </ul>
 
         <p>I used email, date, number, and url in my form.</p>
+<hr>
+        <h1> New Questions</h1>
+<hr>
+<h2>What are different ways to style your form?</h2>
+<p>There are several ways to style a form, including using CSS to control the layout, colors, and fonts. You can also use flexbox or grid for more advanced layouts.</p>
+<h2>Why does the professor like to use flex?</h2>
+<p>The professor likes to use flex because it allows for flexible and responsive layouts that can adapt to different screen sizes and orientations.</p>
+<h2>What makes for a good mobile form?</h2>
+<p>A good mobile form should be easy to read and navigate, with large touch targets for buttons and inputs. It should also minimize the amount of typing required and use input types that bring up the appropriate keyboard on mobile devices.</p>
 
     </main>
 
