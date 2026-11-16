@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Project</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="javascript.css">
+    <header>
+        <h1>My HTML Forms Project</h1>
+        <p>Learning how to use different HTML form controls.</p>
+    </header>
+
+    <main>
+
+        <h2>Basic Login Form</h2>
+
+        <form id="myForm" action="formprocessing.html" method="post">
+
+        <fieldset>
+            <legend>Login Information</legend>
+            <div class="form-row">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-row">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+           <br>
+
+            <label for="password">Password.:</label>
+            <input type="password" id="password" name="password" required>
+           
+            <br><br>
+
+            <button type="submit">Login</button>
+           </div> 
+
+           
+        </form>
+
+        
+        <hr>
+        <h2>Standard Form Controls</h2>
+        <hr>
+        <form>
+        
+            <label for="major">Choose your major:</label>
+            <select id="major" name="major">
+                <option value="computer-science">Computer Science</option>
+                <option value="business">Business</option>
+                <option value="education">Education</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br><br>
+
+            <p>What is your favorite subject?</p>
+            <input type="radio" id="math" name="subject" value="math">
+            <label for="math">Math</label>
+
+            <input type="radio" id="english" name="subject" value="english">
+            <label for="english">English</label>
+
+            <input type="radio" id="computer" name="subject" value="computer">
+            <label for="computer">Computer Science</label>
+   
+            <br><br>
+
+            <p>What are your hobbies?</p>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="basketball" name="hobbies" value="basketball">
+                <label for="basketball">Basketball</label>
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                <label for="cooking">Cooking</label>
+            </div>
+
+            <br><br>
+
+            <label for="comments">Tell us about yourself:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="35" placeholder="Write your answer here..."></textarea>
+
+        </form>
+
+        <br>
+        <hr>       
+        
+        
+        <h2>HTML5 Form Controls</h2>
+        
+        
+        <hr>
+        <form>
+
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday">
+
+            <br><br>
+
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="1" max="100">
+
+            <br><br>
+
+            <label for="website">Your Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+        
+        </fieldset>
+            <br><br>
+    </main>
+
+     <footer>
+        <p>&copy; 2026 Melaia Maiwiriwiri</p>
+    </footer>
+
+    <script>
+       document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+           const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !email || !password) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            if (!email.includes('@')) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            const formData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            console.log('Form Data:', formData); // Log the form data to the console
+
+            // Display the values in an alert (for demonstration purposes)
+            alert('Username: ' + username + '\nEmail: ' + email + '\nPassword: ' + password);
+        });
+
+    </script>
+
+   
+
+</body>
+</html>

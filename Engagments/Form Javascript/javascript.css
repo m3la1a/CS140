@@ -1,0 +1,21 @@
+body {
+ font-family: Arial, sans-serif;   
+}
+.form-row {
+    margin-bottom: 10px 0;
+    display: flex;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(127, 204, 255, 0.871);
+    background-color: #6dfaffb8;
+}
